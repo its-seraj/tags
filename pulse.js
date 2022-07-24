@@ -155,6 +155,11 @@ $(() => {
       $("#AnsOfQuestion143").val(' Unsafe');
       $(e.target).val('Unsafe Content_Competitor Logo');
     }
+    if(e.ctrlKey && e.altKey && e.keyCode == 68){
+      // ctrl + alt + d
+      $("#AnsOfQuestion143").val(' Unsafe');
+      $(e.target).val('Unsafe Content_Death');
+    }
     if(e.ctrlKey && e.altKey && e.keyCode == 73){
       // ctrl + alt + i
       $("#AnsOfQuestion143").val(' Unsafe');
