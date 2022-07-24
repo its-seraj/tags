@@ -24,7 +24,7 @@ $(() => {
       $("#AnsOfQuestion141").val('Safe Content_Tagged_Art and Craft');
     }
     if(e.ctrlKey && e.shiftKey && e.keyCode == 65){
-      // shift + a
+      // ctrl + shift + a
       $("#AnsOfQuestion141").val('Safe Content_Tagged_Astrology');
     }
     if(e.ctrlKey && e.keyCode == 66){
@@ -131,29 +131,44 @@ $(() => {
       // o
       $("#AnsOfQuestion141").val('Safe Content_Tagged_Can\'t identify');
     }
+    if(e.keyCode == 8){
+      // backspace
+      let pr = prompt('Safe Content_Tagged_Photography    Unsafe Content_');
+      $("#AnsOfQuestion141").val(pr);
+    }
     if(e.ctrlKey && e.keyCode == 8){
       // backspace
       $(e.target).val('');
     }
-    if(e.ctrlKey && e.altKey && e.keyCode == 73){
-      // ctrl + alt + i
+    if(e.ctrlKey && e.altKey && e.keyCode == 65){
+      // ctrl + alt + a
       $("#AnsOfQuestion143").val(' Unsafe');
-      $(e.target).val('Unsafe Content_Illegal display of weapon');
+      $(e.target).val('Unsafe Content_Abusive');
+    }
+    if(e.ctrlKey && e.altKey && e.keyCode == 66){
+      // ctrl + alt + b
+      $("#AnsOfQuestion143").val(' Unsafe');
+      $(e.target).val('Unsafe Content_Blurred');
     }
     if(e.ctrlKey && e.altKey && e.keyCode == 67){
       // ctrl + alt + c
       $("#AnsOfQuestion143").val(' Unsafe');
       $(e.target).val('Unsafe Content_Competitor Logo');
     }
+    if(e.ctrlKey && e.altKey && e.keyCode == 73){
+      // ctrl + alt + i
+      $("#AnsOfQuestion143").val(' Unsafe');
+      $(e.target).val('Unsafe Content_Illegal display of weapon');
+    }
+    if(e.ctrlKey && e.altKey && e.keyCode == 80){
+      // ctrl + alt + p
+      $("#AnsOfQuestion143").val(' Unsafe');
+      $(e.target).val('Unsafe Content_Porn');
+    }
     if(e.ctrlKey && e.altKey && e.keyCode == 83){
       // ctrl + alt + s
       $("#AnsOfQuestion143").val(' Unsafe');
       $(e.target).val('Unsafe Content_Small Duration');
-    }
-    if(e.keyCode == 8){
-      // backspace
-      let pr = prompt('Safe Content_Tagged_Photography    Unsafe Content_');
-      $("#AnsOfQuestion141").val(pr);
     }
   })
   $(document).keydown(function (e) {
